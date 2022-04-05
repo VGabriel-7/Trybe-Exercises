@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+}
+
+main{
+    margin-top: 80px;
+}
+
+header {
+    height: 60px;
+    background-color: rgb(194, 194, 194);
+    line-height: 55px;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+nav a {
+    margin: 15px;
+    line-height: 10px;
+    text-decoration: none;
+}
+
+p, h4, .imag, h1, table {
+    width: 600px;
+    margin-left: 20px;
+}
+
+table td, table th {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(194, 194, 194, 0.678);
+}
+tr{
+    background-color: rgba(250, 249, 249, 0.301);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h4:nth-of-type(1){
+    font-size: 35px;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+#links:hover {
+    font-size: large;
+    text-decoration: underline;
+}
+
+.imag {
+    width: 250px;
+    /* float: left; */
+}
