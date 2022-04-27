@@ -1,5 +1,6 @@
 #body {
-  background-color: rgb(241, 239, 239);
+  width: auto;
+  background-color: rgb(226, 226, 226);
 }
 
 #section {
@@ -9,6 +10,7 @@
   border: 2px solid rgba(231, 230, 230, 0.767);
   background-color: rgb(255, 255, 255);
   border-radius: 1%;
+  box-shadow: 1px 1px 30px rgb(105, 104, 104);
 }
 
 #button-submit {
