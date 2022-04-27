@@ -1,0 +1,30 @@
+  * {
+    color: rgb(131, 131, 131);
+  }
+
+  .textarea {
+    display: block;
+    width: 300px;
+    resize: none;
+  }
+
+  .form {
+    border: 2px solid black;
+    padding: 20px;
+    padding-right: 213px;
+    width: 500px;
+  }
+
+  .form-standart {
+    margin-bottom: 15px;
+  }
+
+  .button {
+    background-color: white;
+    width: 100px;
+    margin: 15px 10px 0px ;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+  

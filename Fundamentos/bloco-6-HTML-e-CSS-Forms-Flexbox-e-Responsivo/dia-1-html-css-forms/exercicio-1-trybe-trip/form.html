@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form - Trybe Trip</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <form action="" method="get">
+      <section class="form">
+        <div class="full-name form-standart">
+          <label for="name">Nome:</label>
+          <input type="text" name="full-name" id="name" minlength="10" maxlength="40" required autocomplete="off">
+        </div>
+        
+        <div class="e-mail form-standart">
+          <label for="e-mail">Email:</label>
+          <input type="email" name="email" id="e-mail" minlength="10" maxlength="50" required>
+        </div>
+        
+        <div class="options form-standart">
+          <label for="first-option" class="options-destiny">
+          <input type="radio" name="opition" id="first-option" value="cidade" required />Cidade
+          </label>
+
+          <label for="second-option" class="options-destiny">
+          <input type="radio" name="opition" id="second-option" value="campo" />Campo
+          </label>
+
+          <label for="third-option" class="options-destiny form-standart">
+          <input type="radio" name="opition" id="third-option" value="praia" />Praia
+          </label>
+
+          <label for="fourth-option" class="options-destiny form-standart">
+          <input type="radio" name="opition" id="fourth-option" value="montanhas" />Montanhas
+          </label>
+        </div>
+
+        <div class="the-why form-standart">
+          <label for="why">Por que você deve ser escolhido?</label>
+          <textarea name="the-why" class="textarea" id="why" cols="30" rows="10" maxlength="500" required placeholder="Digite aqui..."></textarea>
+          
+        </div>
+
+        <div class="date-travel form-standart">
+          <label for="date">Data:
+          <input type="text" name="date-travel" placeholder="dd/mm/aaaa" id="date">
+          </label>
+        </div>
+
+        <div class="form-standart">
+          <label for="oportunity">
+            <input type="checkbox" name="option" id="oportunity" value="oportunity-true" required>
+            Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          </label>
+          <br>
+          <label for="permission-img">
+            <input type="checkbox" name="option" id="permission-img" value="permission-img-true" required>
+            Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          </label>
+        </div>
+      </section>
+      <button type="submit" id="button-submit" class="button form-standart">Enviar</button>
+      <button type="reset" id="button-reset" class="button form-standart">Apagar</button>
+  </form>
+  </header>
+  <script src="./script.js"></script>
+</body>
+</html>
