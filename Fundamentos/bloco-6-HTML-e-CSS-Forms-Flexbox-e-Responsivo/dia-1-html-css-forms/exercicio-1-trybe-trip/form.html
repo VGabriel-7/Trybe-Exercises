@@ -6,65 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form - Trybe Trip</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="body">
   <header>
-    <form action="" method="get">
-      <section class="form">
-        <div class="full-name form-standart">
+    <form action="" method="get" class="needs-validation" novalidate>
+      <section id="section">
+        <div>
           <label for="name">Nome:</label>
-          <input type="text" name="full-name" id="name" minlength="10" maxlength="40" required autocomplete="off">
+          <input class="form-control" type="text" name="full-name" id="name" 
+          minlength="10" maxlength="40" required autocomplete="off" />
         </div>
         
-        <div class="e-mail form-standart">
+        <div>
           <label for="e-mail">Email:</label>
-          <input type="email" name="email" id="e-mail" minlength="10" maxlength="50" required>
+          <input class="form-control" type="email" name="email" id="e-mail" minlength="10" maxlength="50" required>
         </div>
         
-        <div class="options form-standart">
-          <label for="first-option" class="options-destiny">
-          <input type="radio" name="opition" id="first-option" value="cidade" required />Cidade
+        <div>
+          <label for="first-option" class="form-check-label">
+          <input class="form-check-input" type="radio" name="opition" id="first-option" value="cidade" required/>Cidade
           </label>
 
-          <label for="second-option" class="options-destiny">
-          <input type="radio" name="opition" id="second-option" value="campo" />Campo
+          <label for="second-option" class="form-check-label">
+          <input class="form-check-input" type="radio" name="opition" id="second-option" value="campo" />Campo
           </label>
 
-          <label for="third-option" class="options-destiny form-standart">
-          <input type="radio" name="opition" id="third-option" value="praia" />Praia
+          <label for="third-option" class="from-check-label">
+          <input class="form-check-input" type="radio" name="opition" id="third-option" value="praia" />Praia
           </label>
 
-          <label for="fourth-option" class="options-destiny form-standart">
-          <input type="radio" name="opition" id="fourth-option" value="montanhas" />Montanhas
-          </label>
-        </div>
-
-        <div class="the-why form-standart">
-          <label for="why">Por que você deve ser escolhido?</label>
-          <textarea name="the-why" class="textarea" id="why" cols="30" rows="10" maxlength="500" required placeholder="Digite aqui..."></textarea>
-          
-        </div>
-
-        <div class="date-travel form-standart">
-          <label for="date">Data:
-          <input type="text" name="date-travel" placeholder="dd/mm/aaaa" id="date">
+          <label for="fourth-option" class="from-check-label">
+          <input class="form-check-input" type="radio" name="opition" id="ourth-option" value="montanhas" />Montanhas
           </label>
         </div>
 
-        <div class="form-standart">
-          <label for="oportunity">
-            <input type="checkbox" name="option" id="oportunity" value="oportunity-true" required>
+        <div>
+          <label for="textarea" class="form-check-lavel" >Por que você deve ser escolhido?</label>
+          <textarea 
+          name="the-why" id="textarea" cols="30" class="form-control"
+          rows="10" maxlength="500" placeholder="Digite aqui...">
+          </textarea>
+        </div>
+
+        <div>
+          <label for="date" class="form-check-label">Data:
+          <input class="form-control" type="text" name="date-travel" required placeholder="dd/mm/aaaa">
+          </label>
+        </div>
+
+        <div>
+          <label for="oportunity" class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="option" id="oportunity" value="oportunity-true" required>
             Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
           </label>
           <br>
-          <label for="permission-img">
-            <input type="checkbox" name="option" id="permission-img" value="permission-img-true" required>
-            Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          <label for="permission-img" class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="option" 
+            id="permission-img" value="permission-img-true" required />
+            Concordo que imagens das minhas férias poderão ser usadas 
+            na divulgação de concursos futuros.
           </label>
         </div>
       </section>
-      <button type="submit" id="button-submit" class="button form-standart">Enviar</button>
-      <button type="reset" id="button-reset" class="button form-standart">Apagar</button>
+      <button type="submit" id="button-submit" class="btn btn-success">Enviar</button>
+      <button type="reset" id="button-reset" class="btn btn-success">Apagar</button>
   </form>
   </header>
   <script src="./script.js"></script>

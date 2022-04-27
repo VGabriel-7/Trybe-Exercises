@@ -1,30 +1,20 @@
-  * {
-    color: rgb(131, 131, 131);
-  }
+#body {
+  background-color: rgb(241, 239, 239);
+}
 
-  .textarea {
-    display: block;
-    width: 300px;
-    resize: none;
-  }
+#section {
+  width: 60%;
+  padding: 20px;
+  margin: 50px auto 10px;
+  border: 2px solid rgba(231, 230, 230, 0.767);
+  background-color: rgb(255, 255, 255);
+}
 
-  .form {
-    border: 2px solid black;
-    padding: 20px;
-    padding-right: 213px;
-    width: 500px;
-  }
+#button-submit {
+  margin-left: 170px;
+  margin-right: 10px;
+}
 
-  .form-standart {
-    margin-bottom: 15px;
-  }
-
-  .button {
-    background-color: white;
-    width: 100px;
-    margin: 15px 10px 0px ;
-    padding: 7px;
-    border-radius: 5px;
-    border: 1px solid;
-  }
-  
+#textarea {
+  resize: none;
+}
