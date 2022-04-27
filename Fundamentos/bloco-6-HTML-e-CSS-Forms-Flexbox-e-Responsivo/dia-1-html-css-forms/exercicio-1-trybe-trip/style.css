@@ -8,6 +8,7 @@
   margin: 50px auto 10px;
   border: 2px solid rgba(231, 230, 230, 0.767);
   background-color: rgb(255, 255, 255);
+  border-radius: 1%;
 }
 
 #button-submit {
