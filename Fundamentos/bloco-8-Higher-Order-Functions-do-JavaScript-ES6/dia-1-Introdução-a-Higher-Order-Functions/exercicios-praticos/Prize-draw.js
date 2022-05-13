@@ -3,6 +3,16 @@
 // sorteado. O retorno da sua HOF deve ser uma string (Ex: "Tente novamente" ou "Parabéns você ganhou").
 
 const prizeDraw = (number, func) => {
-  Math.floor((Math.random() * 5) + 1);
+  const numberPrizeDraw = Math.floor((Math.random() * 5) + 1);
+  func(number, numberPrizeDraw);
 };
-console.log(prizeDraw());
+
+prizeDraw(3, (bet, drawn) => {
+  if (bet === drawn) {
+    console.log(bet, drawn);
+    console.log('Parabéns você ganhou!');
+  } else {
+    console.log(bet, drawn);
+    console.log('Tente novamente');
+  }
+});
