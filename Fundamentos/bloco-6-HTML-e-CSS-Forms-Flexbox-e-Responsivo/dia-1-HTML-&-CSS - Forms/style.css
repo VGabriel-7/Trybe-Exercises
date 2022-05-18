@@ -6,7 +6,7 @@
 #section {
   width: 60%;
   padding: 20px;
-  margin: 0px auto 10px;
+  margin: 50px auto 10px;
   border: 2px solid rgba(231, 230, 230, 0.767);
   background-color: rgb(255, 255, 255);
   border-radius: 1%;
@@ -21,14 +21,4 @@
 
 #textarea {
   resize: none;
-}
-
-header {
-  width: 60%;
-  margin: 10px auto;
-  text-align: center;
-}
-
-h1 {
-  text-shadow: 10px 3px 20px black;
 }
