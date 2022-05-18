@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="igual">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="igual">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      const title = document.getElementById("page-title");
+      const subTitle = document.getElementById("subtitle");
+      const secondParagraph = document.getElementById("second-paragraph");
+      paragraph.style.color = "red";
+      title.innerText = "Raissa";
+      subTitle.innerText = "Melhor pessoa que existe!";
+      secondParagraph.innerText = "Ela é o amor da minha vida! Eu amo aquela menina!"
+      document.getElementsByClassName("igual")[0].style.color = "green"
+      document.getElementsByClassName("igual")[1].style.color = "DeepPink"
+      document.getElementsByTagName("h4")[0].style.color = "LimeGreen"
+    </script>
+  </body>
+</html>
